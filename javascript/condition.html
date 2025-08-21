@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learing Conditional Statement</h1>
+    <script>
+      //true or false = bulioon
+      // check if a number is positive, negative or zero
+      var age = 10;
+      if (age < 20) {
+        console.log("you are a teenager");
+      } else {
+        console.log("you are an adult");
+      }
+
+      var a = 10;
+      var b = 30;
+
+      var sum = a + b;
+      if (sum >= 20) {
+        console.log("sum is greater the 20");
+      } else {
+        console.log("sum is less the 20");
+      }
+
+      // operators < > >= <= == % &&
+      // check if sum equals to 30
+      if (sum == 30) {
+        console.log("sum is equal to 30");
+      } else {
+        console.log("sum is not equal to 30");
+      }
+
+      //find the largest number among two different numbers
+      var num1 = 15;
+      var num2 = 25;
+
+      if (num1 > num2) {
+        console.log("num1 is greater");
+      } else {
+        console.log("num2 is greater");
+      }
+
+      // check if the given number is even or odd
+      var number = 17;
+      if (number % 2 == 0) {
+        console.log("number is even");
+      } else {
+        console.log("number is odd");
+      }
+
+      // check the largest number among three different numbers
+
+      var numA = 15;
+      var numB = 25;
+      var numC = 35;
+
+      if (numA > numB && numA > numC) {
+        console.log("numA is greater");
+      } else if (numB > numC) {
+        console.log("numB is the greatest");
+      } else {
+        console.log("numC is the greater");
+      }
+
+      //check if a number is positive, negative of zero
+
+      var num = -5;
+      if (num > 0) {
+        console.log("num is positive");
+      } else if (num < 0) {
+        console.log("num is negative");
+      } else {
+        console.log("num is zero");
+      }
+
+      // write a function that takes a number and returns even if the number is even and odd if its odd
+
+      var num10 = 17;
+      if (num10 % 2 == 0) {
+        console.log("num10 is even");
+      } else {
+        console.log("num10 is odd");
+      }
+
+      // write a function that checks if a number is positive, negative or zero
+
+      var num = -17;
+      if (num > 0) {
+        console.log("num is positive");
+      } else if (num < 0) {
+        console.log("num is negative");
+      } else {
+        console.log("num is zero");
+      }
+
+      //write a function that takes a numerical grade (0-100) and returns: A for 90-100, B for 80-89, C for 70-79, D for 60-69 and F for below 60
+
+      var grade = 85;
+      if (grade >= 90 && grade <= 100) {
+        console.log("grade is A");
+      } else if (grade >= 80) {
+        console.log("grade is B");
+      } else if (grade >= 70) {
+        console.log("grade is C");
+      } else if (grade >= 60) {
+        console.log("grade is D");
+      } else {
+        console.log("grade is F");
+      }
+
+      //creat a function that categorize age
+
+      var age = 47;
+      if (age >= 0 && age <= 12) {
+        console.log("age is child");
+      } else if (age <= 19) {
+        console.log("age is Teen");
+      } else if (age <= 64) {
+        console.log("age is Adult");
+      } else {
+        console.log("age is Senior");
+      }
+
+      // write a function that takes temperature in celcius and returns: freezing if below 0, cold if 0-15, mild if 16-25, warm if 26-35, hot above 35
+
+      var temperature = 18;
+
+      if (temperature < 0) {
+        console.log("temperature is Freezing");
+      } else if (temperature >= 15) {
+        console.log("temperature is Cold");
+      } else if (temperature >= 25) {
+        console.log("temperature is mild");
+      } else if (temperature >= 35) {
+        console.log("temperature is warm");
+      } else {
+        console.log("temperature is hot");
+      }
+
+      //create a function that checks if a number is between 1 and 100 (inclusive). Return true if it is, flase otherwise.
+
+      var num4 = 5;
+      if (num4 >= 0 && num4 >= 100) {
+        console.log("num4 is ture");
+      } else {
+        console.log("num4 is false");
+      }
+
+      //write a function that applies discount based on purchase amount; no discount for amounts under 50, 5% discount for 50-99, 10% dicount for 100-199 and 15% discount for 200 and above and final price after discount.
+      var amount = 250;
+      if (amount < 50) {
+        console.log("No Discount");
+      } else if (amount >= 50 && amount <= 99) {
+        console.log("5% discount Allowed", amount * 0.95);
+      } else if (amount >= 100 && amount <= 199) {
+        console.log("10% discount");
+      } else if (amount >= 200) {
+        console.log("15% discount");
+      }
+
+      //creat a function that checks if a number is divisible by both 3 and 5, return "Fizzbuzz" if divisible by 3, "Fizz" if divisible by 5, "buzz" of the number itself otherwise
+
+      var randomNumber = 15;
+      if (randomNumber % 3 == 0 && randomNumber % 5 == 0) {
+        console.log("FizzBuzz");
+      } else if (randomNumber % 3 == 0) {
+        console.log("Fizz");
+      } else {
+        console.log("Buzz");
+      }
+
+      //Write a function that takes driving speed and speed limit, then return "safe" if at or under the limit, "warning" if 1-10mph over, "ticket" if more then 10mph over
+
+      var speed = 10;
+      if (speed < 0) {
+        console.log("Safe");
+      } else if (speed >= 1 && speed <= 10) {
+        console.log("warning");
+      } else {
+        console.log("Ticket");
+      }
+
+      //create a function that takes BMI value and returns the catagory
+
+      var bmi = 24;
+      if (bmi <= 18.5) {
+        console.log("Underweight");
+      } else if (bmi > 18.5 && bmi <= 24.9) {
+        console.log("Normal");
+      } else if (bmi >= 25 && bmi <= 29.9) {
+        console.log("Overweight");
+      } else {
+        console.log("Obese");
+      }
+    </script>
+  </body>
+</html>

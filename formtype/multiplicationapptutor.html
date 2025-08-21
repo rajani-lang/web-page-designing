@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication App Tutor</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <div class="rounded-2xl p-4">
+    <body class="bg-[yellow] w-full rounded-2xl">
+      <section
+        class="bg-[white] mx-auto container p-5 m-60 rounded-[10px] shadow-lg"
+      >
+        <div>
+          <p class="text-[green] font-bold flex justify-end mb-5">Score: 1</p>
+          <h1
+            class="p-2 text-3xl font-bold text-black mb-5 flex justify-center"
+          >
+            What is 5 multiply by 3?
+          </h1>
+          <input
+            class="border border-[3px] flex text-center text-2xl w-full mb-4 rounded-sm mb-5 p-2"
+            type="number"
+            id="answer"
+            placeholder="15"
+          />
+          <button
+            id="submit"
+            class="text-[white] rounded-sm text-2xl flex w-full justify-center bg-green-600 mb-5 p-1"
+          >
+            Submit
+          </button>
+        </div>
+      </section>
+
+      <script>
+        var btn = document.getElementById("submit");
+        console.log("btn", btn);
+        var answer = document.getElementById("answer");
+        console.log("answer", answer);
+
+        // btn.click = function () {
+        //   if (answer.value == 15) {
+        //     console.log("Correct");
+        //   } else {
+        //     console.log("Incorrect, try again");
+        //   }
+        // };
+
+        btn.addEventListener("click", function () {
+          if (answer.value == "15") {
+            console.log("Correct");
+            answer.value = "";
+          } else {
+            console.log("Incorrect, Try Again");
+          }
+        });
+      </script>
+    </body>
+  </div>
+</html>

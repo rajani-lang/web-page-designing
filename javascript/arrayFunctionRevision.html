@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Second Session on Function</h1>
+
+    <script>
+      function printDecor() {
+        console.log("***********");
+      }
+      function printMessage(msg) {
+        printDecor();
+        console.log(msg);
+      }
+      // Default Value
+      function calculateSum(num1 = 10, num2 = 30) {
+        let sum = num1 + num2;
+        // console.log(sum);
+        printMessage(sum);
+      }
+      calculateSum(10, 20);
+      printDecor();
+      calculateSum(20, 30);
+      printDecor();
+      calculateSum(40, 60);
+      calculateSum(100000, 20000000);
+      calculateSum();
+      calculateSum(30);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="myTitle">Hello World</h1>
+    <script>
+      // Get the element with Id 'myTitle'
+      let myTitle = document.getElementById;
+      // difference between innerHTML and innerText
+      <div id="content"></div>;
+      const div = document.getElementById("content");
+
+      // Set innerHTML: renders as a heading with italicized "World"
+      div.innerHTML = "<h2>Hello <em>World</em></h2>";
+
+      // Set innerText: displays the raw HTML as plain text
+      div.innerText = "<h2>Hello <em>World</em></h2>";
+      // 3. Text Content Manipulation
+      function updateElementText(elementId, newText) {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.textContent = newText;
+        } else {
+          console.warn(`Element with ID "${elementId}" not found.`);
+        }
+      }
+      // Write code to get the current text of an element with id "status" and append " - Updated!" to it
+      const statusElement = document.getElementById("status");
+      if (statusElement) {
+        statusElement.textContent += " - Updated!";
+      }
+      const element = document.getElementById("myElement");
+      const newHTML = "<p>New content here</p>";
+
+      // Add new HTML at the end of the element
+      element.insertAdjacentHTML("beforeend", newHTML);
+      //  Basic Event Handling
+      document.getElementById("myBtn").addEventListener("click", function () {
+        alert("Button clicked!");
+      });
+      document
+        .getElementById("hover-item")
+        .addEventListener("mouseover", function () {
+          this.style.backgroundColor = "yellow";
+        });
+    </script>
+  </body>
+</html>

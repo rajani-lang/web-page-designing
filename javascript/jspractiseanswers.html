@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script Practical Questions</title>
+  </head>
+  <body>
+    <script>
+      //Practical JavaScript Questions - Based on Class Topics Variable Definition, Assignment & Reassignment (8 Questions)
+
+      // 1.What will be the output? Ans: Undefined
+      let name;
+      {
+        console.log(name);
+      }
+
+      // 2.What will be the output?
+      let age = 25;
+      age = 30;
+      {
+        console.log(age, "reassigned value");
+      }
+
+      // 3.Fix the error in this code:
+
+      const city = "New York";
+      //city = "London"; (const no re-declare, no re-assign)
+      {
+        console.log(city);
+      }
+
+      // 4.What's the difference between these two declarations?
+
+      let score; //undefined
+      //let score = 0; // key word let re-used, value re-defined "0"
+
+      // 5. What will be the output?
+      var x = 10;
+      var x = 20;
+      {
+        console.log(x, "newly re-assigned value");
+      }
+
+      // 6. Complete the code to reassign the variable: Write code to change studentName to "Bob". Should print "Bob"
+
+      let studentName = "Alice";
+      studentName = "Bob"; // re-assigned
+      {
+        console.log(studentName);
+      }
+
+      // 7. What will happen when you run this code?
+
+      let price = 100; //"let" price already declared 100
+      // let price = 200; ('let' re-declaration coding process wrong,)
+      {
+        console.log(price);
+      }
+
+      // 8. Declare a variable called total without assigning any value, then assign it the value 50.
+      let total;
+      total = 50;
+      {
+        console.log(total, "re-assigned value");
+      }
+
+      // 9. Undefined vs Null (6 Questions)  What will be the output?
+
+      let username;
+      {
+        console.log(username); //undefined
+      }
+      {
+        console.log(typeof username); // "string value or name value"
+      }
+
+      // 10. What will be the output?
+
+      let data = null;
+      {
+        console.log(data); //null
+      }
+      //{console.log(typeof data);} not understood
+
+      // 11. Fill in the blanks:
+
+      // let a;           // a is "Undefined"
+      // let b = null;    // b is "null"
+      // let c = "";      // c is "empty value"
+
+      // 12. Which of these variables has the value undefined?
+
+      //let x; //Undefined
+      let y = null;
+      let z = 0;
+      let w = "";
+
+      // 13.  What's the difference between undefined and null?
+      // variables not defined its value,strings and booleans example; let x;
+      // variables defined as null in its value section; let x=null;
+
+      // 14. What will be the output?
+      {
+        console.log(undefined == null);
+      } // true
+
+      {
+        console.log(undefined === null);
+      } //false
+
+      // 15. Data Types (8 Questions) What data type will each variable be?
+
+      let a = 42; // Type: number
+      let b = "Hello"; // Type: string
+      let c = true; // Type: boolean
+      let d = {}; // Type: object
+      let e = []; // Type: araay
+
+      // 16. What will be the output?
+
+      {
+        console.log(typeof 25);
+      }
+      {
+        console.log(typeof "25");
+      }
+      {
+        console.log(typeof true);
+      }
+
+      // 17. Fix this code to make age a number data type:let age = "25";console.log(typeof age); Should print "number"
+
+      age = 25; //age already defined and re-defined in Question number 2, therefore "age" re-defined again.
+      {
+        console.log(age);
+      }
+
+      // 18. What will be the output?
+      //let score = 100;
+      //score = "One Hundred";
+      //console.log(typeof score);
+
+      {
+        let score = 100;
+        score = "One Hundred";
+        console.log(score);
+      } // let score is already defined in Question no. 4, therefore i have used "object" bracket and The output will be "One Hundred" since its re-defined
+
+      // 19. Identify the data type of each value:
+
+      42; // Type: Number
+      ("JavaScript"); // Type: key string
+      false; // Type: boolean
+      null; // Type: null
+      undefined; // Type: undefined
+
+      // 20. What will be the output?
+
+      let mixed = 10;
+      mixed = "ten";
+      mixed = true;
+      {
+        console.log(typeof mixed);
+      } //Output will be "true" coz number is re-defined as string and again re-defined as boolean
+
+      // 21. Complete the code to check if value is a string: Ans:  Its a String
+
+      let value = "Hello World";
+      if (value === 0); // number
+      {
+        console.log("It's a string!");
+      }
+
+      // 22. What data type is the result?
+
+      let result = 5 + "5"; // Ans: result will be string
+      {
+        console.log(typeof result);
+      }
+
+      // 23. Object.keys() and Object.values() (8 Questions)
+      // What will be the output? Ans: name, age, city
+
+      let person = {
+        name: "John",
+        age: 25,
+        city: "Boston",
+      };
+      {
+        console.log(Object.keys(person));
+      }
+
+      // 24. What will be the output? Ans: toyota, camry, 2020
+      let car = {
+        brand: "Toyota",
+        model: "Camry",
+        year: 2020,
+      };
+      {
+        console.log(Object.values(car));
+      }
+
+      // 25.  Complete the code to get all property names:
+
+      let book = {
+        title: "JavaScript Basics",
+        author: "John Doe",
+        pages: 300,
+      };
+      // let propertyNames = title,author,pages_______.(book);
+      // {console.log(propertyNames);}
+
+      // 26. How many keys does this object have? Ans 3 keys; Name Grade and subject
+
+      let student = {
+        name: "Sarah",
+        grade: "A",
+        subject: "Math",
+      };
+      {
+        console.log(Object.keys(student).length);
+      }
+
+      // 27. What will be the output? Ans: 'red'
+
+      let colors = {
+        primary: "red",
+        secondary: "blue",
+      };
+      {
+        console.log(Object.values(colors)[0]);
+      }
+
+      // 28. Complete the code to get all values from the object: Ans: iphone, 128GB and black
+
+      let phone = {
+        brand: "iPhone",
+        storage: "128GB",
+        color: "black",
+      };
+      {
+        console.log(Object.values(phone));
+      }
+
+      // 29.  What will be the output? Answer: Empty
+
+      let empty = {};
+      {
+        console.log(Object.keys(empty));
+      }
+      {
+        console.log(Object.values(empty));
+      }
+
+      // 30. Fix this code to properly get object keys: Answer: Object Keys are 'Brand' and "ram"
+
+      let laptop = {
+        brand: "Dell",
+        ram: "8GB",
+      };
+      //let keys = laptop.keys(); // Fix this line
+      {
+        console.log(Object.keys(laptop));
+      }
+
+      // 31.  Additional Practice Questions (10 Questions)
+      // What will be the output? Answer: B:2
+
+      let obj = { a: 1, b: 2, c: 3 };
+      {
+        console.log(Object.keys(obj)[1]);
+      }
+
+      // 32. Complete the code to check if a variable is undefined:
+
+      let test;
+      if ((test === "", 0)) {
+        console.log("it is a string or a number");
+      } else {
+        console.log("Variable is undefined");
+      }
+
+      // 33. What will be the output?
+
+      let product = { name: "Phone", price: 500 };
+      product.price = 450;
+      {
+        console.log(Object.values(product));
+      } // 450 will be displayed, because object value is re-defined
+
+      // 34. Fix this code to properly assign null:
+
+      //{let data = "null";
+      //console.log(data === null);}
+      //if data ===""// Should print true
+
+      // 35. What data type will result be? Ans: String
+
+      {
+        let num = 10;
+        let str = "20";
+        let result = num + str;
+        console.log(typeof result);
+      }
+
+      // 36. Complete the code to get the second value from the object: Ans. Blue
+
+      {
+        let colors = { first: "red", second: "blue", third: "green" };
+        console.log(Object.values(colors)[1]);
+      }
+
+      // 37. What will be the output? (Answer: Zero, because object is empty)
+
+      let user = {};
+      {
+        console.log(Object.keys(user).length);
+      }
+
+      // 38.  Reassign the object property correctly: // Should print "Honda"
+      //Ans: 'Honda' Printed
+      {
+        let car = { brand: "Toyota" };
+        car.brand = "Honda";
+        console.log(car.brand);
+      }
+
+      // 39. What's the difference in output? // Ans: Number, String, Boolean
+
+      {
+        let a = 0;
+        let b = null;
+        let c;
+      }
+      {
+        console.log(typeof a, typeof b, typeof c);
+      }
+
+      // 40. Complete the code to add a new property: // not understood
+
+      {
+        let student = { name: "John", age: 20 };
+      }
+      // Add age property with value 20
+      {
+        console.log(Object.keys(student));
+      } // Should include both "name" and "age"
+    </script>
+  </body>
+</html>

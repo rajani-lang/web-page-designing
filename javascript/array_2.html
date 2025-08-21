@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Day 2 of Learning Array</h1>
+
+    <script>
+      //Data Structure: Array : Stack Data
+      const fruits = ["apple", "banana", "watermelon"];
+      console.log(fruits[0]);
+      fruits[0] = "pineapple";
+      console.log(fruits);
+      fruits.push("orange");
+      console.log(fruits);
+      fruits.push("strawberry");
+      console.log(fruits);
+
+      // geography history math science
+      // LIFO - Last In First Out
+      fruits.pop();
+      console.log(fruits);
+      fruits.pop();
+      console.log(fruits);
+      fruits.pop();
+      console.log(fruits);
+      fruits.push("mango");
+      fruits.push("coconut");
+      console.log(fruits);
+      //length of array
+      console.log(fruits.length);
+      //   fruits.pop();
+      //   fruits.pop();
+
+      console.log(fruits.slice(1, 3));
+      console.log(fruits);
+      const animals = ["bird", "lion", "tiger"];
+      console.log(fruits.concat(animals));
+      console.log(animals.concat(fruits));
+
+      console.log(animals.indexOf("tiger"));
+      console.log(animals.indexOf("lion"));
+      console.log(animals.indexOf("bird"));
+      console.log(animals.indexOf("Bird")); // if element is not found it returns -1
+      console.log(typeof animals);
+      fruits.push("mango");
+      console.log(fruits.indexOf("mango"));
+      //WAP to check if 'mango' is in the fruit list or not
+      console.log(fruits);
+      if (fruits.indexOf("mango") === -1) {
+        console.log("mango not found");
+      } else {
+        console.log("mango found");
+      }
+    </script>
+  </body>
+</html>

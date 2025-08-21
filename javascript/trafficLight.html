@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Traffic Light: Create three colored circles that change on button click (red → yellow → green → red) -->
+
+    <h1>Traffic Light App</h1>
+    <div id="red" class="bg-red-500 rounded-full w-12 h-12"></div>
+    <div id="yellow" class="hidden bg-yellow-500 rounded-full w-12 h-12"></div>
+    <div id="green" class="hidden bg-green-500 rounded-full w-12 h-12"></div>
+
+    <button
+      id="changeLight"
+      class="bg-blue-500 px-12 py-2 rounded-md text-dark"
+    >
+      Change Light
+    </button>
+
+    <script>
+      let red = document.getElementById("red");
+      let yellow = document.getElementById("yellow");
+      let green = document.getElementById("green");
+      let btn = document.getElementById("changeLight");
+      let currentLight = "red";
+      btn.addEventListener("click", function () {
+        if (currentLight === "red") {
+          red.classList.add("hidden");
+          yellow.classList.remove("hidden");
+          currentLight = "yellow";
+        } else if (currentLight === "yellow") {
+          yellow.classList.add("hidden");
+          green.classList.remove("hidden");
+          currentLight = "green";
+        } else if (currentLight === "green") {
+          red.classList.remove("hidden");
+          green.classList.add("hidden");
+          currentLight = "red";
+        }
+      });
+    </script>
+  </body>
+</html>

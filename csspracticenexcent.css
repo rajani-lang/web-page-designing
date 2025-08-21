@@ -1,0 +1,29 @@
+.header {
+  background-color: yellowgreen;
+  justify-content: space-around;
+  display: flex;
+}
+.list1 {
+  display: flex;
+  list-style-type: none;
+  column-gap: 50px;
+}
+.login {
+  padding: 10px 20px;
+  background-color: #f5f7fa;
+  border-radius: 6px;
+  color: #4caf4f;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.signin {
+  padding: 10px 20px;
+  background-color: #4caf4f;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  gap: 10px;
+}
